@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+:root {
+  --Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --Soft-Pink: hsl(333, 80%, 67%);
+  --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--White);
+  background-image: url(../imgs/bg-pattern-top-desktop.svg),
+    url(../imgs/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right 62vw bottom 48vh, left 30vw top 3vh;
+}
+@media (max-width: 1160px) {
+  body {
+    background-image: url(../imgs/bg-pattern-top-mobile.svg),
+      url(../imgs/bg-pattern-bottom-mobile.svg);
+    background-position: right 0vw bottom 157vh, left 0vw top 124vh;
+  }
+}
+main {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+@media (max-width: 1160px) {
+  main {
+    width: 100%;
+    padding: 5rem 2rem;
+  }
+}
+main .top-section {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 1160px) {
+  main .top-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+main .top-section .text {
+  flex-basis: 35%;
+}
+@media (max-width: 1160px) {
+  main .top-section .text {
+    flex-basis: 50%;
+  }
+}
+main .top-section .text h1 {
+  font-size: 3rem;
+  color: var(--Very-Dark-Magenta);
+  margin-bottom: 2rem;
+}
+main .top-section .text p {
+  color: var(--Dark-Grayish-Magenta);
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+main .top-section .rates {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  gap: 1rem;
+}
+main .top-section .rates .rate {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--Light-Grayish-Magenta);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  width: 80%;
+}
+main .top-section .rates .rate .stars img {
+  padding-right: 8px;
+}
+main .top-section .rates .rate-1 {
+  align-self: flex-start;
+}
+main .top-section .rates .rate-2 {
+  align-self: center;
+}
+main .top-section .rates .rate-3 {
+  align-self: flex-end;
+}
+main .top-section .rates .rate h2 {
+  font-size: 1rem;
+  margin-left: 20px;
+  color: var(--Very-Dark-Magenta);
+}
+@media (max-width: 1160px) {
+  main .top-section .rates .rate {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  main .top-section .rates .rate h2{
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+main .bottom-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 270px;
+  gap: 1.5rem;
+}
+@media (max-width: 1160px) {
+  main .bottom-section {
+    flex-direction: column;
+    height: auto;
+  }
+}
+main .bottom-section .card {
+  width: 370px;
+  background-color: var(--Very-Dark-Magenta);
+  height: 230px;
+  padding: 2rem;
+  color: var(--White);
+  border-radius: 10px;
+}
+main .bottom-section .card .head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+main .bottom-section .card .head img {
+  width: 2rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+main .bottom-section .card .head h2 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.3rem;
+}
+main .bottom-section .card .head p {
+  color: var(--Soft-Pink);
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+}
+main .bottom-section .card > p {
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+main .bottom-section .card-1 {
+  align-self: flex-start;
+}
+main .bottom-section .card-2 {
+  align-self: center;
+}
+main .bottom-section .card-3 {
+  align-self: flex-end;
+}
+@media (max-width: 1160px) {
+  main .bottom-section .card {
+    width: 100%;
+    height: auto;
+  }
+  main .bottom-section .card-1 {
+    align-self: center;
+  }
+  main .bottom-section .card-2 {
+    align-self: center;
+  }
+  main .bottom-section .card-3 {
+    align-self: center;
+  }
+}
