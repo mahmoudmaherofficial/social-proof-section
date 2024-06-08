@@ -29,6 +29,7 @@ body {
     background-image: url(../imgs/bg-pattern-top-mobile.svg),
       url(../imgs/bg-pattern-bottom-mobile.svg);
     background-position: right 0vw bottom 157vh, left 0vw top 124vh;
+    background-attachment: fixed;
   }
 }
 main {
@@ -113,7 +114,7 @@ main .top-section .rates .rate h2 {
     padding: 1rem 2rem;
     width: 100%;
   }
-  main .top-section .rates .rate h2{
+  main .top-section .rates .rate h2 {
     margin-left: 0;
     margin-top: 0.5rem;
   }
